@@ -17,8 +17,7 @@ class Album
       sql = "INSERT INTO albums (
           artist_id,
           title,
-          genre
-        )
+          genre)
         VALUES ($1, $2, $3)
         RETURNING id;"
 

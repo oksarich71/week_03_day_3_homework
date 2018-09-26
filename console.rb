@@ -15,9 +15,9 @@ artist3 = Artist.new ({
   'last_name' => 'Jackson'
 })
 
-artist1.save
-artist2.save
-artist3.save
+# artist1.save
+# artist2.save
+# artist3.save
 
 album1 = Album.new ({
   'artist_id' => artist1.id,
@@ -59,17 +59,18 @@ album1 = Album.new ({
     'title' => 'Bad',
     'genre' => 'Pop'
     })
-  album1.save
-  album2.save
-  album3.save
-  album4.save
-  album5.save
-  album6.save
+  # album1.save
+  # album2.save
+  # album3.save
+  # album4.save
+  # album5.save
+  # album6.save
 
  # p Album.all
 # album2.artist
-album1.title = 'Happy'
-album1.update
+# album1.title = 'Happy'
+# album1.update
+  p Artist.find(10)
 
-  binding.pry
-  nil
+  # binding.pry
+  # nil
