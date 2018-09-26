@@ -62,4 +62,8 @@ class Artist
       return artist_object
     end
 
+    def self.delete(id)
+       sql = "DELETE FROM artists WHERE id = $1"
+       result = SqlRunner.run(sql, [id])
+     end
 end

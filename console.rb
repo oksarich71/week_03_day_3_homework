@@ -70,7 +70,7 @@ album1 = Album.new ({
 # album2.artist
 # album1.title = 'Happy'
 # album1.update
-  p Album.find(15)
+  Album.delete(10)
 
   # binding.pry
   # nil
