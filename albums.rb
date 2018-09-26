@@ -38,6 +38,16 @@ class Album
          Album.new(albums_hash)
        end
        return albums_objects
-     end 
+     end
+
+     def artist()
+    #we have @artist_id
+    sql = 'SELECT * FROM artists WHERE id = $1;'
+    results = SqlRunner.run(sql, [@artist_id])
+    artist_hash = results[0]
+    artist = Artist.new(artist_hash)
+    return artist
+  #return customer object
+  end 
 
 end
