@@ -48,6 +48,13 @@ class Album
     artist = Artist.new(artist_hash)
     return artist
   #return customer object
-  end 
+  end
+
+  def update()
+     sql = "UPDATE albums SET (artist_id, title, genre) = ($1, $2, $3) WHERE id = $4;"
+     values = [@artist_id, @title, @genre, @id]
+     SqlRunner.run(sql, values)
+    end
+
 
 end

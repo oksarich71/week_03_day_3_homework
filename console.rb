@@ -68,8 +68,8 @@ album1 = Album.new ({
 
  # p Album.all
 # album2.artist
-artist1.first_name = 'Simon'
-artist1.update
+album1.title = 'Happy'
+album1.update
 
   binding.pry
   nil
