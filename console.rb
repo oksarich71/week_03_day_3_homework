@@ -67,7 +67,7 @@ album1 = Album.new ({
   album6.save
 
  # p Album.all
-album2.artist
+# album2.artist
 
   binding.pry
   nil
